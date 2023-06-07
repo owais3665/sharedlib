@@ -15,5 +15,5 @@ def contiDeployment(jobname,ip,context)
 
 def seliniumTest(jobname)
 {
-  sh 'java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar' 
+  sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
 }
