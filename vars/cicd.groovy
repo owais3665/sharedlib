@@ -18,3 +18,8 @@ def contiTesting(repo)
    git "https://github.com/intelliqittrainings/${repo}"
   
 }
+
+def seliniumTest(jobname)
+{
+  sh 'java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar' 
+}
